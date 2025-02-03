@@ -50,6 +50,16 @@ void takeInput(Node *&root)
     }
 }
 
+void inorderTraversal(Node *root)
+{
+    if (root == NULL)
+        return;
+
+    inorderTraversal(root->left);
+    cout << root->data << " ";
+    inorderTraversal(root->right);
+}
+
 Node *findMin(Node *root)
 {
     while (root && root->left != NULL)
@@ -116,6 +126,20 @@ int main()
     Node *root = NULL;
 
     takeInput(root);
+
+    cout << "Inorder Traversal before deletion: ";
+    inorderTraversal(root);
+    cout << endl;
+
+    int delVal;
+    cout << "Enter the value to delete: ";
+    cin >> delVal;
+
+    root = deleteBST(root, delVal);
+
+    cout << "Inorder Traversal after deletion: ";
+    inorderTraversal(root);
+    cout << endl;
 
     return 0;
 }

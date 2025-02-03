@@ -62,8 +62,8 @@ void inorderTraversal(Node *root)
 
 int main()
 {
-    int preorder[] = {0, 1, 3, 4, 2, 5};
     int inorder[] = {3, 1, 4, 0, 5, 2};
+    int preorder[] = {0, 1, 3, 4, 2, 5};
 
     int preorderIndex = 0;
     int n = sizeof(inorder) / sizeof(inorder[0]);
