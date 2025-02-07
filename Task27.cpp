@@ -5,7 +5,7 @@ using namespace std;
 
 void reverseString(string &str, int start, int end)
 {
-    cout << str << " " << endl;
+
     if (start > end)
         return;
 
