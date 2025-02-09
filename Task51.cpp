@@ -33,6 +33,7 @@ void frequencyCounter(int arr[], int size)
 int main()
 {
     int arr[] = {1, 2, 3, 2, 4, 2, 5, 3, 3};
+
     int size = sizeof(arr) / sizeof(arr[0]);
 
     frequencyCounter(arr, size);
